@@ -7,7 +7,9 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, FSInputFile, Inli
 from aiogram.filters import CommandStart
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 import asyncio
+from dotenv import load_dotenv
 
+load_dotenv()
 TOKEN = os.getenv("TOKEN")
 
 bot = Bot(token=TOKEN)
