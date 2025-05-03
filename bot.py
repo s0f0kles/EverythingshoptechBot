@@ -9,8 +9,7 @@ from aiogram.utils.keyboard import ReplyKeyboardBuilder
 import asyncio
 from dotenv import load_dotenv
 
-load_dotenv()
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.environ.get("TOKEN")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
