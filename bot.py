@@ -1,3 +1,4 @@
+import os
 import json
 import sqlite3
 from datetime import datetime
@@ -6,9 +7,8 @@ from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, FSInputFile, Inli
 from aiogram.filters import CommandStart
 from aiogram.utils.keyboard import ReplyKeyboardBuilder
 import asyncio
-import os
 
-TOKEN = ""
+TOKEN = os.getenv("TOKEN")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
